@@ -1,0 +1,33 @@
+{
+  "name": "postcss-fixes",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to fix known Browser Bugs. DIs "safe" by default and therefore won't make any undesired changes to your CSS.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "browserbugs",
+    "bugfixes"
+  ],
+  "author": "Matthias Müller <MattDiMu@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": "MattDiMu/postcss-fixes",
+  "bugs": {
+    "url": "https://github.com/MattDiMu/postcss-fixes/issues"
+  },
+  "homepage": "https://github.com/MattDiMu/postcss-fixes",
+  "dependencies": {
+    "postcss": "^5.0.16"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "eslint": "^2.1.0",
+    "eslint-config-postcss": "^2.0.0"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  }
+}
