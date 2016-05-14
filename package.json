@@ -1,7 +1,7 @@
 {
   "name": "postcss-fixes",
-  "version": "1.0.0",
-  "description": "PostCSS plugin to fix known Browser Bugs. Is 'safe' by default and therefore won't make any undesired changes to your CSS.",
+  "version": "1.0.1",
+  "description": "PostCSS plugin to fix known Browser Bugs.",
   "keywords": [
     "postcss",
     "css",
