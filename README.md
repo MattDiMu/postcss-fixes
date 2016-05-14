@@ -45,7 +45,7 @@ Hint: An opinionated config for these plugins is used, to make them more future-
 
 
 ```js
-postcss([ require('postcss-fixes') ]) // do only very safe transformations
+postcss([ require('postcss-fixes') ]) // do recommended transformations
 ```
 
 ```js
