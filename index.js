@@ -49,12 +49,12 @@ var recommendedPlugins = [
 
 
 module.exports = postcss.plugin('postcss-fixes', function (opts) {
-    var usedPlugins = safePlugins;
+    var usedPlugins;
 
-    if (typeof opts === 'object' && 'mode' in opts) {
-        if (opts.mode === 'recommended') {
-            usedPlugins = usedPlugins.concat(recommendedPlugins);
-        }
+    if (typeof opts === 'object' && 'mode' in opts && opts.mode === 'safe') {
+        usedPlugins = safePlugins;
+    } else {
+        usedPlugins = safePlugins.concat(recommendedPlugins);
     }
 
     var postcssInstance = postcss();

@@ -16,22 +16,22 @@ test('pseudo-selectors adapted, no config given', t => {
     return run(t, 'a::before{ }', 'a:before{ }', {});
 });
 
-test('pseudo-selectors adapted, recommended config', t => {
-    return run(t, 'a::before{ }', 'a:before{ }', { mode: 'recommended' });
+test('pseudo-selectors adapted, default config', t => {
+    return run(t, 'a::before{ }', 'a:before{ }', { });
 });
 
 test('opacity fallback, no config', t => {
-    return run(t, '.class{opacity: .5;}', '.class{opacity: .5;}');
+    return run(t, '.class{opacity: .5;}', '.class{opacity: .5;}', { mode: 'safe' });
 });
 
-test('opacity fallback, recommended config', t => {
-    return run(t, '.class{opacity: .5;}', '.class{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";opacity: .5;}', { mode: 'recommended' });
+test('opacity fallback, default config', t => {
+    return run(t, '.class{opacity: .5;}', '.class{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";opacity: .5;}', { });
 });
 
-test('rem to px fallback, recommended config', t => {
-    return run(t, 'main{font-size:2.5rem;}', 'main{font-size:40px;font-size:2.5rem;}', { mode: 'recommended' });
+test('rem to px fallback, default config', t => {
+    return run(t, 'main{font-size:2.5rem;}', 'main{font-size:40px;font-size:2.5rem;}', { });
 });
 
-test('rem to px fallback with custom root font size, recommended config', t => {
-    return run(t, 'main{font-size:2.5rem;}html{font-size:10px;}', 'main{font-size:25px;font-size:2.5rem;}html{font-size:10px;}', { mode: 'recommended' });
+test('rem to px fallback with custom root font size, default config', t => {
+    return run(t, 'main{font-size:2.5rem;}html{font-size:10px;}', 'main{font-size:25px;font-size:2.5rem;}html{font-size:10px;}', { });
 });
