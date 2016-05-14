@@ -10,8 +10,8 @@ Hint: An opinionated config for these plugins is used, to make them more future-
 
 [pixrem](https://github.com/robwierzbowski/node-pixrem)
 [postcss-calc](https://github.com/postcss/postcss-calc)
-[postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes)
-[postcss-pseudoelements](https://github.com/axa-ch/postcss-pseudoelements)
+[postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes) (also in 'safe' mode)
+[postcss-pseudoelements](https://github.com/axa-ch/postcss-pseudoelements) (also in 'safe' mode)
 [postcss-unopacity](https://github.com/jonathantneal/postcss-unopacity)
 [postcss-unroot](https://github.com/jonathantneal/postcss-unroot)
 
@@ -49,7 +49,7 @@ postcss([ require('postcss-fixes') ]) // do only very safe transformations
 ```
 
 ```js
-postcss([ require('postcss-fixes')({ mode: 'recommended' }) ]) //do all recommended transformations
+postcss([ require('postcss-fixes')({ mode: 'safe' }) ]) // do only very safe transformations
 ```
 
 See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
