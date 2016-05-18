@@ -1,4 +1,4 @@
-# PostCSS Fixes [![Build Status][ci-img]][ci][![dependencies](https://david-dm.org/MattDiMu/postcss-fixes.svg)] (https://david-dm.org/MattDiMu/postcss-fixes) [![devDependencies](https://david-dm.org/MattDiMu/postcss-fixes/dev-status.svg)](https://david-dm.org/MattDiMu/postcss-fixes)
+# PostCSS Fixes [![Build Status][ci-img]][ci] [![Code Climate](https://codeclimate.com/github/MattDiMu/postcss-fixes/badges/gpa.svg)](https://codeclimate.com/github/MattDiMu/postcss-fixes) [![dependencies](https://david-dm.org/MattDiMu/postcss-fixes.svg)] (https://david-dm.org/MattDiMu/postcss-fixes) [![devDependencies](https://david-dm.org/MattDiMu/postcss-fixes/dev-status.svg)](https://david-dm.org/MattDiMu/postcss-fixes)
 
 
 [PostCSS] pack to fix known Browser Bugs, making it easier to write your CSS according to the official W3C Syntax.
