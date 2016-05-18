@@ -1,4 +1,5 @@
-# PostCSS Fixes [![Build Status][ci-img]][ci]
+# PostCSS Fixes [![Build Status][ci-img]][ci][![dependencies](https://david-dm.org/MattDiMu/gulp-sassvg.svg)](https://david-dm.org/MattDiMu/gulp-sassvg)[![devDependencies](https://david-dm.org/MattDiMu/gulp-sassvg/dev-status.svg)](https://david-dm.org/MattDiMu/gulp-sassvg)
+
 
 [PostCSS] pack to fix known Browser Bugs, making it easier to write your CSS according to the official W3C Syntax.
 
