@@ -20,8 +20,8 @@ test('pseudo-selectors adapted, default config', t => {
     return run(t, 'a::before{ }', 'a:before{ }', { });
 });
 
-test('opacity fallback, no config', t => {
-    return run(t, '.class{opacity: .5;}', '.class{opacity: .5;}', { mode: 'safe' });
+test('opacity fallback, safe mode', t => {
+    return run(t, '.class{opacity: .5;}', '.class{opacity: .5;}', { preset: 'safe' });
 });
 
 test('opacity fallback, default config', t => {
