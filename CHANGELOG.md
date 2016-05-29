@@ -3,4 +3,6 @@
 
 ## 1.1
 * Restructuring, option 'mode' changed to 'preset'
+
+#1.2
 * available presets: recommended, safe, fixes-only, fallbacks-only, enable-all and disable-all
