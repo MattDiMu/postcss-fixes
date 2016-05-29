@@ -4,23 +4,12 @@
 [ci-img]:  https://travis-ci.org/MattDiMu/postcss-fixes.svg
 [ci]:      https://travis-ci.org/MattDiMu/postcss-fixes
 
-
 [PostCSS] pack to fix known Browser Bugs, making it easier to write your CSS according to the official W3C Syntax.
 
 [postcss-fixes](https://github.com/MattDiMu/postcss-fixes) differs from [cssnext](https://github.com/MoOx/postcss-cssnext) by doing only transformations for stable CSS Features, whereas cssnext is more progressively tries to implement features, which aren't official W3C recommendations yet and could therefore change/break in the future. Another alternative is [oldie](https://github.com/jonathantneal/oldie), which is Internet Explorer only, however.
 
 
-## Used Plugins
-Hint: An opinionated config for these plugins is used, to make them more future-safe
-* [pixrem](https://github.com/robwierzbowski/node-pixrem)
-* [postcss-calc](https://github.com/postcss/postcss-calc)
-* [postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes) (also in 'safe' mode)
-* [postcss-pseudoelements](https://github.com/axa-ch/postcss-pseudoelements) (also in 'safe' mode)
-* [postcss-unopacity](https://github.com/jonathantneal/postcss-unopacity)
-* [postcss-unroot](https://github.com/jonathantneal/postcss-unroot)
-
-
-## Example (many more transformations)
+## A few examples
 ```css
 ::before {
     flex: 1;
@@ -39,9 +28,18 @@ Hint: An opinionated config for these plugins is used, to make them more future-
 }
 ```
 
+## Used Plugins
+Hint: An opinionated config for these plugins is used, to make them more future-safe
+* [pixrem](https://github.com/robwierzbowski/node-pixrem)
+* [postcss-calc](https://github.com/postcss/postcss-calc)
+* [postcss-flexbugs-fixes](https://github.com/luisrudge/postcss-flexbugs-fixes) (also in 'safe' mode)
+* [postcss-pseudoelements](https://github.com/axa-ch/postcss-pseudoelements) (also in 'safe' mode)
+* [postcss-unopacity](https://github.com/jonathantneal/postcss-unopacity)
+* [postcss-unroot](https://github.com/jonathantneal/postcss-unroot)
+
+
 ### Recommended Usage
 [postcss-fixes](https://github.com/MattDiMu/postcss-fixes) is recommended to be used in conjunction with [autoprefixer](https://github.com/postcss/autoprefixer) and [cssnano](https://github.com/ben-eb/cssnano) (optimizations)
-
 ```js
 /* for developement */
 postcss([
