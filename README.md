@@ -49,7 +49,7 @@ postcss([ require('postcss-fixes') ]) // do recommended transformations
 ```
 
 ```js
-postcss([ require('postcss-fixes')({ mode: 'safe' }) ]) // do only very safe transformations
+postcss([ require('postcss-fixes')({ preset: 'safe' }) ]) // do only very safe transformations
 ```
 
 See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
