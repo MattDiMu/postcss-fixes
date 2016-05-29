@@ -1,6 +1,6 @@
 {
   "name": "postcss-fixes",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "PostCSS plugin to fix known Browser Bugs.",
   "keywords": [
     "postcss",
@@ -27,7 +27,7 @@
     "postcss-unroot": "^1.0.2"
   },
   "devDependencies": {
-    "ava": "^0.14.0",
+    "ava": "^0.15.1",
     "eslint": "^2.1.0",
     "eslint-config-postcss": "^2.0.0"
   },
