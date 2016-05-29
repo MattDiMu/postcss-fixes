@@ -1,5 +1,9 @@
 # PostCSS Fixes [![Build Status][ci-img]][ci] [![Code Climate](https://codeclimate.com/github/MattDiMu/postcss-fixes/badges/gpa.svg)](https://codeclimate.com/github/MattDiMu/postcss-fixes) [![dependencies](https://david-dm.org/MattDiMu/postcss-fixes.svg)] (https://david-dm.org/MattDiMu/postcss-fixes) [![devDependencies](https://david-dm.org/MattDiMu/postcss-fixes/dev-status.svg)](https://david-dm.org/MattDiMu/postcss-fixes)
 
+[PostCSS]: https://github.com/postcss/postcss
+[ci-img]:  https://travis-ci.org/MattDiMu/postcss-fixes.svg
+[ci]:      https://travis-ci.org/MattDiMu/postcss-fixes
+
 
 [PostCSS] pack to fix known Browser Bugs, making it easier to write your CSS according to the official W3C Syntax.
 
@@ -35,21 +39,42 @@ Hint: An opinionated config for these plugins is used, to make them more future-
 }
 ```
 
-
-[PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/MattDiMu/postcss-fixes.svg
-[ci]:      https://travis-ci.org/MattDiMu/postcss-fixes
-
-
-## Usage
-
+### Recommended Usage
+[postcss-fixes](https://github.com/MattDiMu/postcss-fixes) is recommended to be used in conjunction with [autoprefixer](https://github.com/postcss/autoprefixer) and [cssnano](https://github.com/ben-eb/cssnano) (optimizations)
 
 ```js
-postcss([ require('postcss-fixes') ]) // do recommended transformations
+/* for developement */
+postcss([
+    require('postcss-fixes')(),
+    require('autoprefixer')()
+])
+
+/* for production */
+postcss([
+    require('postcss-fixes')(),
+    require('autoprefixer')(),
+    require('cssnano')({
+        'safe': true, // I would recommend using cssnano only in safe mode
+        'calc': false // calc is no longer necessary, as it is already done by postcss-fixes due to precision rounding reasons
+    })
+])
 ```
+See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment (e.g. if you are using a task runner like grunt, gulp, broccoli, webpack, etc.).
+
+
+## Options
+### `preset`
+* `recommended` (default)
+* `safe`
+* `fixes-only`
+* `fallbacks-only`
+* `enable-all`
+* `disable-all`
+
+This would look like this:
 
 ```js
-postcss([ require('postcss-fixes')({ preset: 'safe' }) ]) // do only very safe transformations
+postcss([
+    require('postcss-fixes')({ preset: 'safe' }) // do only very safe transformations
+])
 ```
-
-See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
