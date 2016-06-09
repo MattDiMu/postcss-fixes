@@ -15,6 +15,7 @@
     flex: 1;
     opacity: .5;
     height: 2.5rem;
+    width: 10vmin;
 }
 ```
 
@@ -25,6 +26,8 @@
     opacity: .5;
     height: 40px; /* rem to px fallback */
     height: 2.5rem;
+    width: 10vm;
+    width: 10vmin;
 }
 ```
 
@@ -37,6 +40,7 @@ Hint: An opinionated config for these plugins is used, to make them more future-
 * [postcss-unopacity](https://github.com/jonathantneal/postcss-unopacity)
 * [postcss-unroot](https://github.com/jonathantneal/postcss-unroot)
 * [postcss-nth-child-fix](https://github.com/MattDiMu/postcss-nth-child-fix)
+* [postcss-vmin](https://github.com/iamvdo/postcss-vmin)
 
 
 ### Recommended Usage

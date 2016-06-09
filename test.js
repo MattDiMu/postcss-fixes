@@ -39,3 +39,7 @@ test('rem to px fallback with custom root font size, default config', t => {
 test('change nth-child(n) to 1n', t => {
     return run(t, '*:nth-child(n){font-size:2.5rem;}', '*:nth-child(1n){font-size:40px;font-size:2.5rem;}', { });
 });
+
+test('fallback for vmin', t => {
+    return run(t, '*:nth-child(n){height:25vmin;}', '*:nth-child(1n){height:25vm;height:25vmin;}', { });
+});

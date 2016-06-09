@@ -9,3 +9,6 @@
 
 ## 1.3
 * add postcss-nth-child-fix
+
+## 1.4
+* add postcs-vmin to support vmin in IE9

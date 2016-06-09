@@ -1,6 +1,6 @@
 {
   "name": "postcss-fixes",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "PostCSS plugin to fix known Browser Bugs.",
   "keywords": [
     "postcss",
@@ -25,7 +25,8 @@
     "postcss-nth-child-fix": "^1.0.0",
     "postcss-pseudoelements": "^3.0.0",
     "postcss-unopacity": "^1.0.1",
-    "postcss-unroot": "^1.0.2"
+    "postcss-unroot": "^1.0.2",
+    "postcss-vmin": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.15.1",

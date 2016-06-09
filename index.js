@@ -77,6 +77,14 @@ var plugins = [
         isSafe:         true,
         isRecommended:  true,
         isFallback:     false
+    },
+    {
+        id:             'postcss-vmin',
+        plugin: require('postcss-vmin'),
+        options:        {},
+        isSafe:         true,
+        isRecommended:  true,
+        isFallback:     false
     }
 ];
 
