@@ -35,3 +35,7 @@ test('rem to px fallback, default config', t => {
 test('rem to px fallback with custom root font size, default config', t => {
     return run(t, 'main{font-size:2.5rem;}html{font-size:10px;}', 'main{font-size:25px;font-size:2.5rem;}html{font-size:10px;}', { });
 });
+
+test('change nth-child(n) to 1n', t => {
+    return run(t, '*:nth-child(n){font-size:2.5rem;}', '*:nth-child(1n){font-size:40px;font-size:2.5rem;}', { });
+});

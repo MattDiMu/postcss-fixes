@@ -11,7 +11,7 @@
 
 ## A few examples
 ```css
-::before {
+:nth-child(n)::before {
     flex: 1;
     opacity: .5;
     height: 2.5rem;
@@ -19,7 +19,7 @@
 ```
 
 ```css
-:before {
+:nth-child(1n):before {
     flex: 1 1 0%; /* fix some flexbox issues */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* opacity for IE */
     opacity: .5;
@@ -36,6 +36,7 @@ Hint: An opinionated config for these plugins is used, to make them more future-
 * [postcss-pseudoelements](https://github.com/axa-ch/postcss-pseudoelements) (also in 'safe' mode)
 * [postcss-unopacity](https://github.com/jonathantneal/postcss-unopacity)
 * [postcss-unroot](https://github.com/jonathantneal/postcss-unroot)
+* [postcss-nth-child-fix](https://github.com/MattDiMu/postcss-nth-child-fix)
 
 
 ### Recommended Usage

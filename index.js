@@ -69,8 +69,15 @@ var plugins = [
         isSafe:         false,
         isRecommended:  true,
         isFallback:     true
+    },
+    {
+        id:             'postcss-nth-child-fix',
+        plugin: require('postcss-nth-child-fix'),
+        options:        {},
+        isSafe:         true,
+        isRecommended:  true,
+        isFallback:     false
     }
-
 ];
 
 /*
