@@ -4,7 +4,7 @@
 [ci-img]:  https://travis-ci.org/MattDiMu/postcss-fixes.svg
 [ci]:      https://travis-ci.org/MattDiMu/postcss-fixes
 
-[PostCSS] pack to fix known Browser Bugs, making it easier to write your CSS according to the official W3C Syntax.
+[PostCSS] pack to fix known Browser Bugs, making it easier to write your CSS according to the official W3C Syntax. Additionally it adds safe fallbacks.
 
 [postcss-fixes](https://github.com/MattDiMu/postcss-fixes) differs from [cssnext](https://github.com/MoOx/postcss-cssnext) by doing only transformations for stable CSS Features, whereas cssnext is more progressively tries to implement features, which aren't official W3C recommendations yet and could therefore change/break in the future. Another alternative is [oldie](https://github.com/jonathantneal/oldie), which is Internet Explorer only, however.
 
