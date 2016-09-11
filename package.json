@@ -29,7 +29,7 @@
     "postcss-vmin": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.15.1",
+    "ava": "^0.16.0",
     "eslint": "^3.1.0",
     "eslint-config-postcss": "^2.0.0"
   },
