@@ -1,7 +1,7 @@
 {
   "name": "postcss-fixes",
   "version": "1.4.0",
-  "description": "PostCSS plugin to fix known Browser Bugs.",
+  "description": "PostCSS plugin pack to fix known Browser Bugs.",
   "keywords": [
     "postcss",
     "css",
