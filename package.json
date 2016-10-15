@@ -18,9 +18,9 @@
   "homepage": "https://github.com/MattDiMu/postcss-fixes",
   "dependencies": {
     "lodash": "^4.12.0",
-    "pixrem": "^3.0.0",
-    "postcss": "^5.0.16",
-    "postcss-calc": "^5.2.1",
+    "pixrem": "^3.0.2",
+    "postcss": "^5.2.4",
+    "postcss-calc": "^5.3.1",
     "postcss-flexbugs-fixes": "^2.0.0",
     "postcss-nth-child-fix": "^1.0.0",
     "postcss-pseudoelements": "^3.0.0",
