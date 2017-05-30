@@ -119,7 +119,7 @@ function evalPluginsFromPreset(preset) {
 }
 
 
-module.exports = postcss.plugin('postcss-fixes', function (opts) {
+module.exports = postcss.plugin('postcss-fixes', opts => {
     opts = opts || {};
     if (opts.mode && opts.mode === 'safe') console.warn('[postcss-fixes] option "mode" was renamed to "preset". ');
 
@@ -136,7 +136,7 @@ module.exports = postcss.plugin('postcss-fixes', function (opts) {
 
     var postcssInstance = postcss();
 
-    usedPlugins.forEach(function (plugin) {
+    usedPlugins.forEach(plugin => {
         postcssInstance.use(plugin.plugin(plugin.options));
     });
 
