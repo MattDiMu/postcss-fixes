@@ -1,4 +1,4 @@
-# PostCSS Fixes [![Build Status][ci-img]][ci] [![Code Climate](https://codeclimate.com/github/MattDiMu/postcss-fixes/badges/gpa.svg)](https://codeclimate.com/github/MattDiMu/postcss-fixes) [![dependencies] [![devDependencies](https://david-dm.org/MattDiMu/postcss-fixes/dev-status.svg)](https://david-dm.org/MattDiMu/postcss-fixes)
+# PostCSS Fixes [![Build Status][ci-img]][ci] [![Code Climate](https://codeclimate.com/github/MattDiMu/postcss-fixes/badges/gpa.svg)](https://codeclimate.com/github/MattDiMu/postcss-fixes)
 
 [PostCSS]: https://github.com/postcss/postcss
 [ci-img]:  https://travis-ci.org/MattDiMu/postcss-fixes.svg
