@@ -1,6 +1,7 @@
 {
   "name": "postcss-fixes",
   "version": "2.0.1",
+  "type": "commonjs",
   "description": "PostCSS plugin pack to fix known Browser Bugs.",
   "keywords": [
     "postcss",
@@ -19,9 +20,9 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "pixrem": "^3.0.2",
-    "postcss": "^6.0.1",
-    "postcss-calc": "^6.0.0",
-    "postcss-flexbugs-fixes": "^3.0.0",
+    "postcss": "^6.0.23",
+    "postcss-calc": "^6.0.2",
+    "postcss-flexbugs-fixes": "^3.3.1",
     "postcss-nth-child-fix": "^2.0.0",
     "postcss-pseudoelements": "^3.0.0",
     "postcss-unopacity": "^1.0.1",
@@ -29,12 +30,14 @@
     "postcss-vmin": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
+    "ava": "^3.15.0",
     "eslint": "^3.19.0",
     "eslint-config-postcss": "^2.0.2"
   },
   "scripts": {
-    "test": "ava && eslint *.js"
+    "test": "ava && eslint *.js",
+    "test:ava": "ava",
+    "test:eslint": "eslint *.js"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5",
